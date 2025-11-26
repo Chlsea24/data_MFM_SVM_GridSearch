@@ -47,8 +47,7 @@ scaler = joblib.load(SCALER_PATH)
 
 st.title("Identifikasi Wajah Gejala Stroke vs Bell’s Palsy")
 st.write("Silahkan unggah foto wajah yang ingin diklasifikasi. (Format: JPG / JPEG / PNG)")
-
-
+st.write("Saat ini, model hanya dapat mengklasifikasikan wajah gejala Bell's Palsy dan Stroke.")
 
 # Input Mode (Upload atau Kamera)
 
