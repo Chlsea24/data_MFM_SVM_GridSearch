@@ -1,0 +1,38 @@
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.pickle
+
+# Virtual environments
+venv/
+venv_c/
+.env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+
+# Unused models (73 & 82)
+app/saved_model/SVM_GD_73_RBF_best_model.joblib
+app/saved_model/SVM_GD_73_scaler.joblib
+app/saved_model/SVM_GD_82_RBF_best_model.joblib
+app/saved_model/SVM_GD_82_scaler.joblib
+
+# Datasets
+*.csv
+
+# Build & temp
+build/
+dist/
+*.spec
