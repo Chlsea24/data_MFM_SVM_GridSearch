@@ -46,10 +46,7 @@ scaler = joblib.load(SCALER_PATH)
 # Header
 
 st.title("Identifikasi Wajah Gejala Stroke vs Bell’s Palsy")
-#st.write("Silahkan unggah foto wajah yang ingin diklasifikasi. (Format: JPG / JPEG / PNG)")
-#st.write("Saat ini, model hanya dapat mengklasifikasikan wajah gejala ***Bell's Palsy*** dan ***Stroke*** berdasarkan citra yang diinput.")
-
-catatan = '''Saat ini, model hanya dapat mengklasifikasikan wajah gejala ***Bell's Palsy*** dan ***Stroke*** berdasarkan citra yang diinput.
+catatan = '''Saat ini, model hanya dapat mengklasifikasikan wajah gejala :green[***Bell's Palsy***] dan :blue[***Stroke***] berdasarkan citra yang diinput.
 Silahkan unggah foto wajah yang ingin diklasifikasi. (Format: JPG / JPEG / PNG)
 '''
 st.markdown(catatan)
