@@ -46,6 +46,7 @@ scaler = joblib.load(SCALER_PATH)
 # Header
 
 st.title("Identifikasi Wajah Gejala Stroke vs Bell’s Palsy")
+st.divider()
 catatan = '''Saat ini, model hanya dapat mengklasifikasikan wajah gejala :green[***Bell's Palsy***] dan :blue[***Stroke***] berdasarkan citra yang diinput.
 Silahkan unggah foto wajah yang ingin diklasifikasi. (Format: JPG / JPEG / PNG)
 '''
@@ -102,7 +103,7 @@ if img_path is not None:
 
 
 # Footer
-
+st.divider()
 st.markdown(
     """
     <div style='text-align:center; color:#FF4B4B; font-weight:600; margin-top:25px;'>
