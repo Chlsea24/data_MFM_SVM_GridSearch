@@ -46,8 +46,13 @@ scaler = joblib.load(SCALER_PATH)
 # Header
 
 st.title("Identifikasi Wajah Gejala Stroke vs Bell’s Palsy")
-st.write("Silahkan unggah foto wajah yang ingin diklasifikasi. (Format: JPG / JPEG / PNG)")
-st.write("Saat ini, model hanya dapat mengklasifikasikan wajah gejala Bell's Palsy dan Stroke.")
+#st.write("Silahkan unggah foto wajah yang ingin diklasifikasi. (Format: JPG / JPEG / PNG)")
+#st.write("Saat ini, model hanya dapat mengklasifikasikan wajah gejala ***Bell's Palsy*** dan ***Stroke*** berdasarkan citra yang diinput.")
+
+catatan = '''Saat ini, model hanya dapat mengklasifikasikan wajah gejala ***Bell's Palsy*** dan ***Stroke*** berdasarkan citra yang diinput.
+Silahkan unggah foto wajah yang ingin diklasifikasi. (Format: JPG / JPEG / PNG)
+'''
+st.markdown(catatan)
 
 # Input Mode (Upload atau Kamera)
 
@@ -105,7 +110,7 @@ st.markdown(
     """
     <div style='text-align:center; color:#FF4B4B; font-weight:600; margin-top:25px;'>
     PERINGATAN! <br>
-    Hasil belum dapat dijadikan acuan utama dalam diagnosis. <br>
+    Hasil **belum dapat** dijadikan acuan utama dalam diagnosis. <br>
     Silakan konsultasikan lebih lanjut ke tenaga medis profesional.
     <br><br>
     <span style='font-weight:400; font-size:14px; color:#888;'>Universitas Bunda Mulia 2025 @Chelsea Effendi</span>
