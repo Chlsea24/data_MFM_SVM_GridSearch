@@ -7,7 +7,6 @@ from feature_extract import extract_numeric_vector
 
 
 # Streamlit Page Config
-
 st.set_page_config(
     page_title="Identifikasi BP-ST",
     layout="centered",
@@ -16,7 +15,6 @@ st.set_page_config(
 
 
 # Custom CSS
-
 st.markdown("""
     <style>
     .stButton>button {
@@ -31,20 +29,14 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-
-
 # Load Model & Scaler
-
 MODEL_PATH = "saved_model/SVM_GD_91_RBF_best_model.joblib"
 SCALER_PATH = "saved_model/SVM_GD_91_scaler.joblib"
 
 model = joblib.load(MODEL_PATH)
 scaler = joblib.load(SCALER_PATH)
 
-
-
 # Header
-
 st.title("Identifikasi Wajah Gejala Stroke vs Bell’s Palsy")
 st.divider()
 catatan = '''Saat ini, model hanya dapat mengklasifikasikan wajah gejala :green[***Bell's Palsy***] dan :blue[***Stroke***] berdasarkan citra yang diinput.
@@ -53,7 +45,6 @@ Silahkan unggah foto wajah yang ingin diklasifikasi. (Format: JPG / JPEG / PNG)
 st.markdown(catatan)
 
 # Input Mode (Upload atau Kamera)
-
 mode = st.radio("Pilih metode input:", ["📁 Upload", "📷 Kamera"])
 
 img_path = None
@@ -79,7 +70,6 @@ elif mode == "📷 Kamera":
 
 
 # Klasifikasi
-
 if img_path is not None:
 
     with st.spinner("⏳ Memproses gambar..."):
