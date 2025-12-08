@@ -13,22 +13,6 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-
-# Custom CSS
-st.markdown("""
-    <style>
-    .stButton>button {
-        background-color: #54C488 !important;
-        color: white !important;
-        border-radius: 8px !important;
-        border: none !important;
-        padding: 0.6rem 1.2rem !important;
-        font-weight: 600 !important;
-    }
-    .stButton>button:hover { background-color: #45A874 !important; }
-    </style>
-""", unsafe_allow_html=True)
-
 # Load Model & Scaler
 MODEL_PATH = "saved_model/SVM_GD_91_RBF_best_model.joblib"
 SCALER_PATH = "saved_model/SVM_GD_91_scaler.joblib"
