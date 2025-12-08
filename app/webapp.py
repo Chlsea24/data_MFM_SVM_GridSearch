@@ -82,7 +82,7 @@ st.markdown(
     """
     <div style='text-align:center; color:#FF4B4B; font-weight:600; margin-top:25px;'>
     PERINGATAN! <br>
-    Hasil **belum dapat** dijadikan acuan utama dalam diagnosis. <br>
+    Hasil BELUM DAPAT dijadikan acuan utama dalam diagnosis. <br>
     Silakan konsultasikan lebih lanjut ke tenaga medis profesional.
     <br><br>
     <span style='font-weight:400; font-size:14px; color:#888;'>Universitas Bunda Mulia 2025 @Chelsea Effendi</span>
