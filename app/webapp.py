@@ -14,8 +14,8 @@ st.set_page_config(
 )
 
 # Load Model & Scaler
-MODEL_PATH = "saved_model/SVM_GD_91_RBF_best_model.joblib"
-SCALER_PATH = "saved_model/SVM_GD_91_scaler.joblib"
+MODEL_PATH = "saved_model/SVM_GD_82_RBF_best_model.joblib"
+SCALER_PATH = "saved_model/SVM_GD_82_scaler.joblib"
 
 model = joblib.load(MODEL_PATH)
 scaler = joblib.load(SCALER_PATH)

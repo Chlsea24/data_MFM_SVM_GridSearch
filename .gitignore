@@ -26,8 +26,8 @@ logs/
 # Unused models (73 & 82)
 app/saved_model/SVM_GD_73_RBF_best_model.joblib
 app/saved_model/SVM_GD_73_scaler.joblib
-app/saved_model/SVM_GD_82_RBF_best_model.joblib
-app/saved_model/SVM_GD_82_scaler.joblib
+app/saved_model/SVM_GD_91_RBF_best_model.joblib
+app/saved_model/SVM_GD_91_scaler.joblib
 
 # Datasets
 *.csv
